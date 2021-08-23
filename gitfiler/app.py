@@ -2,14 +2,7 @@ from urllib.request import urlopen
 from urllib.parse import urlparse
 from urllib.error import HTTPError
 import re
-
-
-class UnsupportedURL(Exception):
-    pass
-
-
-class InvalidURL(Exception):
-    pass
+from .exceptions import InvalidURL, UnsupportedURL
 
 
 class GitFiler:
